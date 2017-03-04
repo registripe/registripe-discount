@@ -1,0 +1,18 @@
+{
+	"name": "registripe/registripe-discount",
+	"description": "Discount sub-module for RegiStripe module",
+	"type": "silverstripe-module",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jeremy Shipman",
+			"email": "jeremy@burnbright.net"
+		}
+	],
+	"require": {
+		"registripe/registripe-core": "dev-master"
+	},
+	"extra": {
+		"installer-name": "registripe_discount"
+	}
+}

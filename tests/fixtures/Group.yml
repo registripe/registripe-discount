@@ -1,0 +1,54 @@
+RegistrableEvent:
+  groupevent:
+    Title: Group Test Event
+
+EventTicket:
+  groupevent_standard:
+    Event: =>RegistrableEvent.groupevent
+    Title: Standard
+    Type: Price
+    PriceAmount: 10
+  groupevent_free:
+    Event: =>RegistrableEvent.groupevent
+    Title: infant
+    Type: Free
+    PriceAmount: 0
+
+EventRegistration:
+  group:
+    FirstName: Bob
+    Surname: Jones
+    Email: bob.jones@example.com
+
+EventAttendee:
+  group_1:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_2:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_3:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_4:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_5:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_6:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_7:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_8:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_9:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+  group_10:
+    Registration: =>EventRegistration.group
+    Ticket: =>EventTicket.groupevent_standard
+

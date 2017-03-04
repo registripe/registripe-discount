@@ -1,0 +1,31 @@
+RegistrableEvent:
+  familyevent:
+    Title: Family Test Event
+
+EventTicket:
+  familyevent_parent:
+    Event: =>RegistrableEvent.familyevent
+    Title: Parent
+    Type: Price
+    PriceAmount: 100
+  familyevent_child:
+    Event: =>RegistrableEvent.familyevent
+    Child: true
+    Title: Child
+    Type: Price
+    PriceAmount: 50
+
+EventRegistration:
+  family_sm:
+    FirstName: Bob
+    Surname: Jones
+    Email: bob.jones@example.com
+
+EventAttendee:
+  family_sm_1:
+    Registration: =>EventRegistration.family_sm
+    Ticket: =>EventTicket.familyevent_parent
+  family_sm_2:
+    Registration: =>EventRegistration.family_sm
+    Ticket: =>EventTicket.familyevent_child
+
