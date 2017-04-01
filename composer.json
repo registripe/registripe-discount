@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"registripe/registripe-core": "dev-master"
+		"registripe/registripe-core": "*"
 	},
 	"extra": {
 		"installer-name": "registripe_discount"
