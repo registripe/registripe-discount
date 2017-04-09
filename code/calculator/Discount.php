@@ -41,7 +41,7 @@ class Discount {
 	public function getDiscountableAttendees(\EventRegistration $reg) {
 		return $reg->Attendees()
 			->innerJoin("EventTicket", "\"EventAttendee\".\"TicketID\" = \"EventTicket\".\"ID\"")
-			->where("PriceAmount > 0");
+			->where("Price > 0");
 	}
 
 }

@@ -6,14 +6,12 @@ EventTicket:
   familyevent_parent:
     Event: =>RegistrableEvent.familyevent
     Title: Parent
-    Type: Price
-    PriceAmount: 100
+    Price: 100
   familyevent_child:
     Event: =>RegistrableEvent.familyevent
     Child: true
     Title: Child
-    Type: Price
-    PriceAmount: 50
+    Price: 50
 
 EventRegistration:
   family_sm:

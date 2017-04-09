@@ -6,13 +6,11 @@ EventTicket:
   groupevent_standard:
     Event: =>RegistrableEvent.groupevent
     Title: Standard
-    Type: Price
-    PriceAmount: 10
+    Price: 10
   groupevent_free:
     Event: =>RegistrableEvent.groupevent
     Title: infant
-    Type: Free
-    PriceAmount: 0
+    Price: 0
 
 EventRegistration:
   group:
