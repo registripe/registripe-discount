@@ -1,0 +1,15 @@
+---
+name: registripe_discount
+after: registripe_ticketselection
+---
+AttendeeTicketSelection:
+  calculators:
+    - SelectionDiscount
+RegistrableEvent:
+  extensions:
+    - EventDiscountExtension
+
+EventDiscount:
+  constraints:
+    - Quantity
+    - Tickets
