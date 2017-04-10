@@ -36,8 +36,4 @@ class DiscountedEventRegistrationCostCalculatorTest extends \SapphireTest
 		// different combinations of parents
 	}
 
-	// public function testGroupAndFamily() {
-	// 	$this->markTestIncomplete();
-	// }
-
 }
